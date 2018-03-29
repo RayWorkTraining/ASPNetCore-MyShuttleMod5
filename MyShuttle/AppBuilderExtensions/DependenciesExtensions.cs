@@ -9,6 +9,9 @@ namespace MyShuttle.Web.AppBuilderExtensions
         {
             services.AddScoped<MyShuttleContext>();
             services.AddScoped<ICarrierRepository, CarrierRepository>();
+            services.AddScoped<IDriverRepository, DriverRepository>();
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
+            services.AddScoped<IRidesRepository, RidesRepository>();
             return services;
         }
     }
